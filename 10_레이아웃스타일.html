@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃스타일</title>
+</head>
+<style>
+    .size-test{
+        border: 2px solid red;
+    }
+
+    #test1{
+        width: 800px;
+        height: 200px;
+    }
+
+    #test2{
+        width: 80%;
+        height: 200px;
+    }
+
+    .block{
+        width: 150px;
+        height: 130px;
+        border: 1px solid black;
+        color: white;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+
+    .area1{
+        background-color: red;
+    }
+
+    .area2{
+        background-color: orange;
+    }
+
+    .area3{
+        background-color: yellowgreen;
+    }
+
+    .area4{
+        background-color: green;
+    }
+
+    .area5{
+        background-color: blue;
+    }
+
+    /* 
+    width와 height 속성 적용X
+    가로로 배치
+    패딩 크기는 적용됨
+    */
+    .block-test1{
+        display: inline;
+    }
+
+    /* 
+    width와 height 속성 적용 O
+    가로로 배치
+    패딩 크기 적용 O
+     */
+    .block-test2{
+        display: inline-block;
+        /* 마진도 적용 가능하다 */
+        margin-left: -6px;
+    }
+
+    .block-test3{
+        display: block;
+    }
+</style>
+<body>
+    <h1>레이아웃 스타일</h1>
+    <h2>인하인 요소, 블록 요소</h2>
+    <h3>인라인 요소</h3>
+    <p>
+        1. 수평배치 (한줄로 나란히 표시된다) <br>
+        2. 너비와 높이 <br>
+            - 요소의 너비는 콘텐츠 길이에 따라 조정 <br>
+            - 요소의 높이는 기본행 높이에 따라 조정 <br>
+        3. 패딩과 마진
+            - 패딩과 마진이 적용은 되지만 기본행 높이에 따라 제한
+    </p>
+    <h3>블록요소</h3>
+    <p>
+        1. 독립적인 블록 형성 <br> 
+        (새로운 줄에서 시작 및 다음요소도 새로운 줄에서 시작) <br>
+        2. 너비와 높이 <br>
+            - 요소의 너비는 기본적으로 부무 요소의 전체 너비 차지 <br>
+            - 높이는 콘텐츠에 따라 자동으로 조절되지만 설정 가능 <br> 
+        3. 패딩과 마진 <br>
+            - 패딩과 마진 설정이 자유로움
+    </p>
+
+    <h3>width와 heigh</h3>
+    <p>콘텐츠가 차지하고 있는 영역의 크기를 조절 할 수 있는 속성</p>
+
+    <h4>고정 크기</h4>
+    <div id="test1" class="size-test"></div>
+    <h4>가변 크기</h4>
+    <div id="test2" class="size-test"></div>
+
+    <hr>
+    <h3>화면 배치 방법 변경</h3>
+    <p>블럭 요소와 인라인 요소의 속성을 변경하여 배치 방식을
+    변경할 수 있다.
+    </p>
+    <h4>블럭 요소를 인라인 요소로 변경</h4>
+    <pre><b>display: inline 테스트</b></pre>
+    <br>
+    <!-- div.block.block-test1.area*5 -->
+    <div class="block block-test1 area1">첫번째 영역</div>
+    <div class="block block-test1 area2">두번째 영역</div>
+    <div class="block block-test1 area3">세번째 영역</div>
+    <div class="block block-test1 area4">네번째 영역</div>
+    <div class="block block-test1 area5">다섯번째 영역</div>
+
+    <hr>
+    <h4>블럭 요소를 인라인 요소로 변경</h4>
+    <pre><b>display: inline-block 테스트</b></pre>
+    <br>
+    <!-- div.block.block-test2.area*5 -->
+    <div class="block block-test2 area1">첫번째 영역</div>
+    <div class="block block-test2 area2">두번째 영역</div>
+    <div class="block block-test2 area3">세번째 영역</div>
+    <div class="block block-test2 area4">네번째 영역</div>
+    <div class="block block-test2 area5">다섯번째 영역</div>
+
+    <hr>
+    <h4>인라인 요소를 블럭 요소로 변경</h4>
+    <pre><b>display: block 테스트</b></pre>
+    <br>
+    <!-- span.block.block-test3.area*5 -->
+    <span class="block block-test3 area1">첫번째 영역</span>
+    <span class="block block-test3 area2">두번째 영역</span>
+    <span class="block block-test3 area3">세번째 영역</span>
+    <span class="block block-test3 area4">네번째 영역</span>
+    <span class="block block-test3 area5">다섯번째 영역</span>
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+
+</body>
+</html>
