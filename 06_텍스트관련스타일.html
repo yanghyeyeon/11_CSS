@@ -16,19 +16,124 @@
         #c-rgb{
             color: rgb(255, 0, 0);
         }
-
-        #c-rgba{
-            color: rgba(255, 0, 0, 2);
+        
+        #c-rgba {
+            color: rgba(255,0,0,0.2);
         }
 
-        /* hs1(색조(0~360), 채도(0~100%), 명도(0~100%) */
-        #c-hs1{
-            color: hs1(340, 100%, 50%);
+        /* hsl(색조(0~360), 채도(0~100%), 명도(0~100%) */
+        #c-hsl{
+            color: hsl(340, 100%, 50%);
         }
 
-        #c-hs1a{
+        #c-hsla{
             color: hsla(360, 100%, 50%, 0.5);
         }
+       
+
+        /* 텍스트 줄 표시하기/없애기*/
+        #td1{
+            text-decoration: none;
+        }
+        
+        #td2{
+            text-decoration: underline;
+        }
+
+        #td3{
+            text-decoration: line-through;    
+        }
+
+        #td4{
+            text-decoration: overline;
+        }
+
+        /* 텍스트 대소문자 변경 지정 */
+        #tt1{
+            text-transform: none;
+        }
+
+        #tt2{
+            text-transform: capitalize;
+        }
+
+        #tt3{
+            text-transform: uppercase;
+        }
+
+        #tt4{
+            text-transform: lowercase;
+        }
+
+        /* 텍스트에 그림자효과 지정 */
+        #bg{
+            background-color: rgb(197, 196, 196);
+            /* 요소의 경계에 해당한느 여백을 설정 */
+            margin: 30px;
+
+            /* 콘텐츠와 요소의 경계 사이의 내부여백 설정 */
+            padding: 50px;
+        }
+
+        .shadow {
+            font-size: 80px;
+            line-height: 30px;
+            font-weight: 900;
+        }
+
+        /* 그림자 효과 */
+        #ts1{
+            color: orangered;
+            text-shadow: 5px 5px orange;
+        }
+
+        #ts2{
+            color: white;
+            text-shadow: 5px 5px orange;
+        }
+
+        #ts3{
+            color: white;
+            text-shadow: 5px 5px greenyellow;
+        }
+
+        #ts4{
+            color: black;
+            text-shadow: 5px 5px orange;
+        }
+
+        /* 
+        whit-space : HTML 요소 안에 있는 공백을 처리
+        letter-spacing : 텍스트 내의 글자 간격을 제어
+        word-spcing : 텍스트 내의 단어사이의 간격을 제어
+        */
+
+        /* 공백은 무조건 한칸, 엔터쳐도 공백 한칸(개행x) wrap */
+        #space1{
+            white-space: normal;
+            letter-spacing: 5px;
+        }
+
+        /* 공백은 무조건 한카느 화면 밖으로 내용 있음(wrap x), 개행 x */
+        #space2{
+            white-space: nowrap;
+            word-spacing: 10px;
+        }
+
+        /* 공백 유지, 엔터로 개행 O */
+        #space3{
+            white-space: pre;
+        }
+
+        /* 공백은 무조건 한칸, wrap */
+        #space4{
+            white-space: pre-line;
+        }
+
+        #space5{
+            white-space: pre-wrap;
+        }
+
     </style>
 </head>
 <body>
@@ -53,9 +158,13 @@
     <pre> 선택자 {text-decoration : none | underline | overline | line-through; }의 형식으로 표현한다.</pre>
     <ul>
         <li><a href="#" id="td1">하이퍼링크 밑줄 없애기</a></li>
+        <br>
         <li id="td2">텍스트영역 아래 줄 긋기</li>
+        <br>
         <li id="td3">텍스트영역 중간에 줄 긋기</li>
+        <br>
         <li id="td4">텍스트영역 위에 줄 긋기</li>
+        <br>
     </ul>
     <hr>
 
@@ -89,7 +198,9 @@
         명령·규칙 또는 처분이 헌법이나 법률에 위반되는 여부가 재판의 전제가 된 경우에는 대법원은 이를 최종적으로 심사할 권한을 가진다. 국가는 농수산물의 수급균형과 유통구조의 개선에 노력하여 가격안정을
         도모함으로써 농·어민의 이익을 보호한다.
     <p>
-    <p id="space3">모든 국민은 고문을 받지 아니하며, 형사상 자기에게 불리한 진술을 강요당하지 아니한다. 공개하지 아니한 회의내용의 공표에 관하여는 법률이 정하는 바에 의한다.
+    <p id="space3">모든 국민은 고문을 받지 아니하며, 
+        형사상 자기에게 불리한 진술을 강요당하지 아니한다. 
+        공개하지 아니한 회의내용의 공표에 관하여는 법률이 정하는 바에 의한다.
         명령·규칙 또는 처분이 헌법이나 법률에 위반되는 여부가 재판의 전제가 된 경우에는 대법원은 이를 최종적으로 심사할 권한을 가진다. 국가는 농수산물의 수급균형과 유통구조의 개선에 노력하여 가격안정을
         도모함으로써 농·어민의 이익을 보호한다.
     <p>
