@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            background: blue;
+            width: 500px;
+            height: 50px;
+        }
+
+        nav {
+            float: left;
+            width: 80px;
+            height: 300px;
+            background: red;
+        }
+
+        section {
+            float: left;
+            width: 340px;
+            height: 300px;
+            background: green;
+        }
+
+        article {
+            width: 300px;
+            height: 90px;
+            margin: auto;
+        }
+
+        .a1 {
+            background: yellowgreen;
+        }
+
+        .a2 {
+            background: pink;
+        }
+
+        .a3 {
+            background: cyan;
+        }
+
+        aside {
+            float: left;
+            width: 80px;
+            height: 300px;
+            background: cornsilk;
+        }
+
+
+        footer {
+            width: 500px;
+            background: purple;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- 
+    semantic tag
+    - 의미가 부여된 태그, 태그의 의미와 작성될 내용을 매칭해야 한다.
+    - 페이지 레이아웃과 관련되어 있는 tag가 제공된다.
+
+    <header>
+        - 헤더내용
+        - 웹페이지 전체의 헤더 또는 article의 헤더일 수 있음
+
+    <nav>
+        - 네비게이션
+        - 메뉴 또는 사이트맵
+        - header,aside,footer 하위에 위치한다.
+    
+    <main>
+        -한페이지의 주요 컨텐츠 영역
+        -페이지당 하나만 존재해야 한다.
+        -페이지들의 공통부분을 제외한 내용이 들어간다.
+    <article>
+        -실제 내용 (독립적)
+        -하위에 header 또는 footer를 가질 수 있다.
+    
+    <section>
+        -의미적으로 그룹핑 가능한 영역
+        -div, css효과를 위한 그루핑과는 대비됨.
+    
+    <aside>
+        -부가적인 내용
+        -광고/날씨/달력...
+    -->
+    
+    <h1>페이지 레이아웃 설정</h1>
+    <br>
+    <header>header</header>
+
+    <nav>nav</nav>
+
+    <section>
+        <article class="a1">article</article>
+        <article class="a2">article</article>
+        <article class="a3">article</article>
+    </section>
+
+    <aside>aside</aside>
+    <footer>footer</footer>
+</body>
+</html>
